@@ -15,3 +15,5 @@ for (let i = 1; i <= 10; i++) {
     i--; // return to previus number input
   }
 }
+
+console.log(sum);
