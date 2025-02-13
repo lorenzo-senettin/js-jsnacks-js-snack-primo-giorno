@@ -5,10 +5,16 @@
 let array = [];
 
 for (let i = 1; i <= 6; i++) {
-  let numero = parseInt(prompt(`Inserisci numero ${i} di 6:`));
+  let number = parseInt(prompt(`Inserisci numero ${i} di 6:`));
 
-  if (numero % 2 !== 0) {
-    array.push(numero);
+  if (!isNaN(number)) {
+    number = parseInt(number);
+    if (number % 2 !== 0) {
+      array.push(number);
+    }
+  } else {
+    alert("Inserisci un numero valido");
+    i--; // return to previus number input
   }
 }
 
