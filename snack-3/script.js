@@ -5,7 +5,7 @@ let sum = 0;
 
 for (let i = 1; i <= 10; i++) {
   // ask i number
-  let number = parseFloat(prompt(`Inserisci numero ${i} di 10:`));
+  let number = Number(prompt(`Inserisci numero ${i} di 10:`));
 
   // verify if input is valid
   if (!isNaN(number)) {
