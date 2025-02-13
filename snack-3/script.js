@@ -1,13 +1,8 @@
-// l'utente inserisce due parole in successione, con due prompt
-// il software stampa prima la parola più corta, poi la più lunga
+// il software deve chiedere per 10 volte all'utente di inserire un numero
+// il programma stampa la somma di tutti i numeri inseriti
 
-const first_word = prompt("Inserisci la prima parola:")  // ask first word
-const second_word = prompt("Inserisci la seconda parola:")  // ask second word
+let sum = 0;
 
-if (first_word.length > second_word.length) {  // if the first word is longer
-  console.log(`${first_word}` - `${second_word}`);
-} else if (second_word.length > first_word.length) {  // if the second word is longer
-  console.log(`${second_word}` - `${first_word}`);
-} else {  // if the words are the same length
-  console.log("Le parole sono lunge uguali quindi non stampo niente")
+for (let i = 1; i <= 10; i++) {
+  let number = parseFloat(prompt("Inserisci numero ${i} di 10:"));
 }
